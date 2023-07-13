@@ -21,5 +21,10 @@ for i in range(2,101):
     # るか調べる方法から考えてみてください。
     # ヒント3:整数除算演算子//もしくは
     # 代入演算子//=が必要です。
-
+    div = i
+    for j in range(2,i+1):
+        while div % j == 0:
+            div //= j
+            print(j,end=' ')
+    print()
 # %%

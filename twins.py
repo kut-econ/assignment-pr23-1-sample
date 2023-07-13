@@ -24,4 +24,7 @@ for i in range(2,1000):
 # ヒント2:prime[i]+2とprime[i+1]が等しければ
 # prime[i],prime[i+1]は双子素数であることが
 # 分かります。
+for i in range(len(prime)-1):
+    if prime[i] + 2 == prime[i+1]:
+        print(prime[i],prime[i+1])
 # %%
